@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Campus Crew · Four agents, one text away</title>
+<meta name="description" content="Four text-based agents for college students: Syllabus Escape Room, Side Quest, The Forgotten Refund and Move-Out Flip.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root { --paper: oklch(0.985 0.004 250); --ink: oklch(0.24 0.05 262); --muted: oklch(0.48 0.03 262); --line: oklch(0.91 0.01 250); --grid: oklch(0.94 0.008 250); }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Commissioner", system-ui, sans-serif; color: var(--ink); background: var(--paper); background-image: linear-gradient(var(--grid) 1px, transparent 1px), linear-gradient(90deg, var(--grid) 1px, transparent 1px); background-size: 32px 32px; -webkit-font-smoothing: antialiased; }
+  main { max-width: 1080px; margin: 0 auto; padding: 72px 24px 64px; }
+  .kicker { font: 500 14px/1 "JetBrains Mono", monospace; color: var(--muted); }
+  h1 { margin: 16px 0 0; font-size: clamp(40px, 7vw, 72px); line-height: 1.04; letter-spacing: -0.03em; font-weight: 700; max-width: 14ch; }
+  p.lede { margin: 20px 0 0; font-size: 19px; line-height: 1.55; color: var(--muted); max-width: 46ch; }
+  .grid { margin-top: 48px; display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+  a.card { display: flex; flex-direction: column; justify-content: space-between; min-height: 220px; padding: 24px; border-radius: 16px; background: #fff; border: 1px solid var(--line); border-top: 6px solid var(--c); color: inherit; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease; }
+  a.card:hover { transform: translateY(-3px); box-shadow: 0 18px 40px -24px oklch(0.24 0.05 262 / .45); }
+  .when { font: 500 14px/1.4 "JetBrains Mono", monospace; color: var(--c); }
+  .name { margin-top: 12px; font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
+  .hook { margin-top: 8px; font-size: 16px; line-height: 1.5; color: var(--muted); }
+  .go { margin-top: 24px; font-weight: 600; font-size: 16px; color: var(--c); }
+  footer { margin-top: 56px; font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main>
+  <div class="kicker">Campus Crew · UNCW pilot</div>
+  <h1>Four agents. One text away.</h1>
+  <p class="lede">Text-based helpers for the parts of college nobody warns you about.</p>
+  <div class="grid">
+    <a class="card" href="./escape-room/" style="--c: oklch(0.55 0.2 27)"><div><div class="when">Finals season</div><div class="name">Syllabus Escape Room</div><div class="hook">The three things that matter this week, and the score you need on the final.</div></div><div class="go">Find my way out →</div></a>
+    <a class="card" href="./side-quest/" style="--c: oklch(0.5 0.22 295)"><div><div class="when">Every Friday</div><div class="name">Side Quest</div><div class="hook">Squad size, budget, vibe. Get a quest you can actually do tonight.</div></div><div class="go">Roll a quest →</div></a>
+    <a class="card" href="./forgotten-refund/" style="--c: oklch(0.5 0.13 152)"><div><div class="when">After break</div><div class="name">The Forgotten Refund</div><div class="hook">Finds forgotten subscriptions and double charges, then gets your money back.</div></div><div class="go">Find my money →</div></a>
+    <a class="card" href="./move-out-flip/" style="--c: oklch(0.6 0.18 45)"><div><div class="when">Move-out week</div><div class="name">Move-Out Flip</div><div class="hook">Don't curb it. We pick it up, sell it in August, and pay you half.</div></div><div class="go">Flip my stuff →</div></a>
+  </div>
+  <footer>Concept preview by ImpactWorks, Wilmington NC. Not affiliated with UNCW. Demo content is illustrative.</footer>
+</main>
+</body>
+</html>
